@@ -1,0 +1,22 @@
+OPC UA Client & Server Setup Instructions
+
+1. Install Python 3.x on the system.
+
+2. Install required dependency
+   python -m pip install opcua
+
+3. Start the OPC UA Server
+   cd server
+   python opc_server.py
+
+4. Start the OPC UA Client in a new terminal
+   cd client
+   python opc_client.py
+
+5. The client reads 10 OPC UA tags every 60 seconds
+   and logs the data into hourly CSV files
+   inside the output folder.
+
+Notes:
+- Server must be started before the client.
+- CSV files are created per hour automatically.
